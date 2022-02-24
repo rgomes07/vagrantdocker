@@ -1,10 +1,11 @@
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby  :
 
 machines = {
-  "master"   => {"memory" => "1024", "cpu" => "1", "ip" => "100", "image" => "ubuntu/bionic64"},
-  "node01"   => {"memory" => "1024", "cpu" => "1", "ip" => "110", "image" => "ubuntu/bionic64"},
-  "node02"   => {"memory" => "1024", "cpu" => "1", "ip" => "120", "image" => "centos/7"},
+  "master"   => {"memory" => "1024", "cpu" => "1", "ip" => "100", "image" => "bento/ubuntu-20.04"},
+  "node01"   => {"memory" => "1024", "cpu" => "1", "ip" => "110", "image" => "bento/ubuntu-20.04"},
+  "node02"   => {"memory" => "1024", "cpu" => "1", "ip" => "120", "image" => "bento/ubuntu-20.04"},
 }
 
 Vagrant.configure("2") do |config|
@@ -25,3 +26,4 @@ Vagrant.configure("2") do |config|
     end
   end
 end
+
